@@ -5,6 +5,6 @@ WORKDIR /app
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY ocm_mcp_server.py ./
+COPY openshift_mcp_server.py ./
 
-CMD ["python", "ocm_mcp_server.py"]
+CMD ["python", "openshift_mcp_server.py"]
