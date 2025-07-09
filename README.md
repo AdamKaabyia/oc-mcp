@@ -160,10 +160,14 @@ Comprehensive MCP server for managing **ALL operators** and **ALL types of logs*
 pip install -r requirements.txt
 ```
 
-## Development
+## Running the Server
 
+For comprehensive instructions on running the server with different cluster options, see [GETTING_STARTED.md](GETTING_STARTED.md).
+
+Quick start:
 ```bash
-# Run locally
+# With an existing OpenShift cluster
+export KUBECONFIG_PATH=~/.kube/config
 python openshift_mcp_server.py
 
 # Run with SSE transport
